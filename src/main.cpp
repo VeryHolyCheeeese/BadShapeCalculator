@@ -1,358 +1,85 @@
-// TIC TAC TOE
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main()
 {
+int shape;
+int horizontalvalue;
+int trianglevalue;
+int horizontalvaluefinalfinal;
+int horizontalvaluefinal;
+int trianglefinalvalue;
 int answer;
-cout << " 1 | 2 | 3\n 4 | 5 | 6\n 7 | 8 | 9 \n";
-cout << "Please enter a number through 1 to 9\n";
-cin >> answer;
-if (answer == 1) {
-cout << " x | 2 | 3\n 4 | 5 | 6\n 7 | 8 | 9 \n";
-cout << "The Computer will now do its move\n";
-cout << " x | 2 | 3\n 4 | o | 6\n 7 | 8 | 9 \n";
-cout << "Please enter a number through 1 to 9\n";
-cin >> answer;
-    if (answer == 1) {
-    cout << "Illegal move.";
-    system("pause");
+int area1;
+  cout << "Is the shape a triangle,a square or a rectangle? \n 1 triangle 2 for square 3 for rectangle\n press enter after you have typed in the number \n";
+  cin >> shape;
+  if (shape == 1) {
+      cout << "Do you want to calculate the parameter or the area?\n 1 for parameter 2 for area\n press enter after you have typed in the number\n";
+      cin >> answer;
+      if (answer == 1) {
+      cout << "What is the value of 1 of the sides of the triangle?\n press enter after you have typed in the number\n";
+    cin >> trianglevalue;
+    trianglefinalvalue = trianglevalue*3;
+    cout << "The total parameter of the triangle is ";
+    cout << trianglefinalvalue;
+  }
+    if (answer == 2) { 
+          cout << "What is the value of the height of the triangle?\n press enter after you have typed in the number\n";
+        cin >> trianglevalue;
+        cout << "What is the value of the base of the triangle?\n press enter after you have typed in the number\n";        
+        cin >> trianglefinalvalue;
+        horizontalvaluefinal = trianglefinalvalue*0.5;
+        horizontalvaluefinalfinal = trianglevalue*0.5;
+        area1 = horizontalvaluefinalfinal+horizontalvaluefinal,
+        cout << "The total area of the triangle is ";
+        cout << area1;
+  }
+  }
+  if (shape == 2) {
+      cout << "Do you want to calculate the parameter or the area?\n 1 for parameter 2 for area\n press enter after you have typed in the number\n";
+      cin >> answer;
+      if (answer == 1) {
+      cout << "What is the value of 1 of the sides of the square\n press enter after you have typed in the number \n";
+    cin >> trianglevalue;
+    trianglefinalvalue = trianglevalue*4;
+    cout << "The total parameter of the square is ";
+    cout << trianglefinalvalue;
+}
+        if (answer == 2){ 
+          cout << "What is the value of the height of the square?\n press enter after you have typed in the number\n";
+        cin >> trianglevalue;
+        cout << "What is the value of the base of the square?\n press enter after you have typed in the number\n";        
+        cin >> trianglefinalvalue;
+        horizontalvaluefinal = trianglefinalvalue*0.5;
+        horizontalvaluefinalfinal = trianglevalue*0.5;
+        area1 = horizontalvaluefinalfinal+horizontalvaluefinal,
+        cout << "The total area of the square is ";
+        cout << area1;
+}
+}
+    if (shape == 3) {
+      cout << "Do you want to calculate the parameter or the area?\n 1 for parameter 2 for area\n press enter after you have typed in the number\n";
+      cin >> answer;
+        if (answer == 1){         
+    cout << "What is the value of one of the vertical sides in the rectangle?\n press enter after you have typed in the number \n";
+    cin >> trianglevalue;
+    cout << "What is the value of one of the horizontal sides in the rectangle?\n press enter after you have typed in the number \n";
+    cin >> horizontalvalue;
+    trianglefinalvalue = trianglevalue*2;;
+    horizontalvaluefinal = horizontalvalue*2;
+    horizontalvaluefinalfinal = horizontalvaluefinal+trianglefinalvalue;
+    cout << "The total parameter of the rectangle is ";
+    cout << horizontalvaluefinalfinal;
+        }
     }
     if (answer == 2) {
-    cout << " x | x | 3\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | x | o\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 3) {
-    cout << " x | 2 | x\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | o | x\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    
-}
-    if (answer == 4) {
-    cout << " x | 2 | 3\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | 2 | 3\n x | o | 6\n o | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    
-}
-    if (answer == 5) {
-    cout << "Illegal move.";
-    system("pause");
-}
-    if (answer == 6) {
-    cout << " x | 2 | 3\n 4 | o | x\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | 2 | o\n 4 | o | x\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-}
-    if (answer == 7) {
-    cout << " x | 2 | 3\n 4 | o | 6\n x | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | 2 | 3\n o | o | 6\n x | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-}
-    if (answer == 8) {
-    cout << " x | 2 | 3\n 4 | o | 6\n 7 | x | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | 2 | 3\n 4 | o | 6\n o | x | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-}
-    if (answer == 9) {
-    cout << " x | 2 | 3\n 4 | o | 6\n 7 | 8 | x \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | 2 | 3\n 4 | o | 6\n 7 | 8 | x \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-}
-}
-if (answer == 2) {
-cout << " 1 | x | 3\n 4 | 5 | 6\n 7 | 8 | 9 \n";
-cout << "The Computer will now do its move\n";
-cout << " 1 | x | 3\n 4 | o | 6\n 7 | 8 | 9 \n";
-cout << "Please enter a number through 1 to 9\n";
-cin >> answer;
-    if (answer == 1) {
-    cout << " x | x | o\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | x | 3\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 2) {
-    cout << " 1 | x | 3\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "Illegal move.";
-    system("pause");
-    }
-    if (answer == 3) {
-    cout << " 1 | x | x\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | x | x\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 4) {
-    cout << " 1 | x | 3\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | x | 3\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 5) {
-    cout << "Illegal move.";
-    system("pause");
-    }
-    if (answer == 6) {
-    cout << " 1 | x | 3\n 4 | o | x\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | x | o\n 4 | o | x\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 7) {
-    cout << " 1 | x | 3\n 4 | o | 6\n x | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | x | 3\n o | o | 6\n x | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 8) {
-    cout << " 1 | x | 3\n 4 | o | 6\n 7 | x | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | x | 3\n o | o | 6\n 7 | x | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 9) {
-    cout << " 1 | x | 3\n 4 | o | 6\n 7 | 8 | x \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | x | 3\n 4 | o | o\n 7 | 8 | x \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-}
-if (answer == 3) {
-cout << " 1 | 2 | x\n 4 | 5 | 6\n 7 | 8 | 9 \n";
-cout << "The Computer will now do its move\n";
-cout << " 1 | 2 | x\n 4 | o | 6\n 7 | 8 | 9 \n";
-cout << "Please enter a number through 1 to 9\n";
-cin >> answer;
-    if (answer == 1) {
-    cout << " x | 2 | x\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | o | x\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 2) {
-    cout << " 1 | x | x\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | x | x\n 4 | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 3) {
-    cout << "Illegal Move.";
-    system("pause");
-    } 
-    if (answer == 4) {
-    cout << " 1 | 2 | x\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | o | x\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 5) {
-    cout << "Illegal Move.";
-    system("pause");
-    }
-    if (answer == 6) {
-    cout << " 1 | 2 | x\n 4 | o | x\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | 2 | x\n 4 | o | x\n 7 | 8 | o \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 7) {
-    cout << " 1 | 2 | x\n 4 | o | 6\n x | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | 2 | x\n 4 | o | 6\n x | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 8) {
-    cout << " 1 | 2 | x\n 4 | o | 6\n 7 | x | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | 2 | x\n 4 | o | o\n 7 | x | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 9) {
-    cout << " 1 | 2 | x\n 4 | o | 6\n 7 | 8 | x \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | 2 | x\n 4 | o | o\n 7 | 8 | x \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-}
-if (answer == 4) {
-cout << " 1 | 2 | 3\n x | 5 | 6\n 7 | 8 | 9 \n";
-cout << "The Computer will now do its move\n";
-cout << " 1 | 2 | 3\n x | o | 6\n 7 | 8 | 9 \n";
-cout << "Please enter a number through 1 to 9\n";
-cin >> answer;
-    if (answer == 1) {
-    cout << " x | 2 | 3\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " x | o | 3\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 2) {
-    cout << " 1 | x | 3\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | x | 3\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 3) {
-    cout << " 1 | 2 | x\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | o | x\n x | o | 6\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 4) {
-    cout << "Illegal move";
-    system("pause");
-    }
-    if (answer == 5) {
-    cout << "Illegal move";
-    system("pause");
-    }
-    if (answer == 6) {
-    cout << " 1 | 2 | 3\n x | o | x\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | 2 | 3\n x | o | x\n 7 | o | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 7) {
-    cout << " 1 | 2 | 3\n x | o | 6\n x | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | 2 | 3\n x | o | 6\n x | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 8) {
-    cout << " 1 | 2 | 3\n x | o | 6\n 7 | x | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | 2 | 3\n x | o | 6\n o | x | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 9) {
-    cout << " 1 | 2 | 3\n x | o | 6\n 7 | 8 | x \n";
-    cout << "The Computer will now do its move\n";
-    cout << " 1 | 2 | 3\n x | o | 6\n 7 | o | x \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-}
-}
-if (answer == 5) {
-cout << " 1 | 2 | 3\n 4 | x | 6\n 7 | 8 | 9 \n";
-cout << "The Computer will now do its move\n";
-cout << " o | 2 | 3\n 4 | x | 6\n 7 | 8 | 9 \n";
-cout << "Please enter a number through 1 to 9\n";
-cin >> answer;
-    if (answer == 1) {
-    cout << "Illegal move";
-    system("pause");
-    }
-    if (answer == 2) {
-    cout << " o | x | 3\n 4 | x | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | x | 3\n 4 | x | 6\n 7 | o | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 3) {
-    cout << " o | 2 | x\n 4 | x | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | 2 | x\n 4 | x | 6\n o | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 4) {
-    cout << " o | 2 | 3\n x | x | 6\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | 2 | 3\n x | x | o\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 5) {
-    cout << "Illegal move.";
-    system("pause");
-    }
-    if (answer == 6) {
-    cout << " o | 2 | 3\n 4 | x | x\n 7 | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | 2 | 3\n o | x | x\n 7 | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 7) {
-    cout << " o | 2 | 3\n 4 | x | 6\n x | 8 | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | 2 | o\n 4 | x | 6\n x | 8 | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 8) {
-    cout << " o | 2 | 3\n 4 | x | 6\n 7 | x | 9 \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | o | 3\n 4 | x | 6\n 7 | x | 9 \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-    if (answer == 9) {
-    cout << " o | 2 | 3\n 4 | x | 6\n 7 | 8 | x \n";
-    cout << "The Computer will now do its move\n";
-    cout << " o | 2 | 3\n 4 | x | 6\n o | 8 | x \n";
-    cout << "Please enter a number through 1 to 9\n";
-    cin >> answer;
-    }
-}
-if (answer == 6) {
-cout << " 1 | 2 | 3\n 4 | 5 | x\n 7 | 8 | 9 \n";
-cout << "The Computer will now do its move\n";
-cout << " 1 | 2 | 3\n 4 | o | x\n 7 | 8 | 9 \n";
-cout << "Please enter a number through 1 to 9\n";
-}
-if (answer == 7) {
-cout << " 1 | 2 | 3\n 4 | 5 | 6\n x | 8 | 9 \n";
-cout << "The Computer will now do its move\n";
-cout << " 1 | 2 | 3\n 4 | o | 6\n x | 8 | 9 \n";
-cout << "Please enter a number through 1 to 9\n";
-}
-if (answer == 8) {
-cout << " 1 | 2 | 3\n 4 | 5 | 6\n 7 | x | 9 \n";
-cout << "The Computer will now do its move\n";
-cout << " 1 | 2 | 3\n 4 | o | 6\n 7 | x | 9 \n";
-cout << "Please enter a number through 1 to 9\n";
-}
-if (answer == 9) {
-cout << " 1 | 2 | 3\n 4 | 5 | 6\n 7 | 8 | x \n";
-cout << "The Computer will now do its move\n";
-cout << " 1 | 2 | 3\n 4 | o | 6\n 7 | 8 | x \n";
+        cout << "What is the value of the height of the rectanle?\n press enter after you have typed in the number\n";
+        cin >> trianglevalue;
+        cout << "What is the value of the base of the rectangle?\n press enter after you have typed in the number\n";        
+        cin >> trianglefinalvalue;
+        horizontalvaluefinalfinal = trianglefinalvalue*trianglevalue;
+        cout << "The total area of the rectangle is ";
+        cout << horizontalvaluefinalfinal;
 }
 }
