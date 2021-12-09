@@ -1,2 +1,2 @@
-# TicTacToeButCheesy
-
+# Bad Shape Calculator
+Someone wantead me to make a shape calculator for children, They specifically wanted me to make it so you can calculate the parameter and the area of the shapes: Triangle, Square, Rectangle.
